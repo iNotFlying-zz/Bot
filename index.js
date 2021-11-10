@@ -10,8 +10,14 @@ const hearManager = new HearManager();
 vk.updates.on('message_new', hearManager.middleware);
 
 hearManager.hear('/php', async (context) => {
-	percent = 100;
-	await context.send("Ваша совместимость с PHP " + Math.floor(Math.random() * 101) + "%");
+	if (context.senderId === 165821176) {
+		return context.send("Ваша совместимость с PHP 0%");
+	} else if (context.senderId === 542975168) {
+		return context.send("Ваша совместимость с PHP 1001%");
+	} else {
+		percent = 100;
+		await context.send("Ваша совместимость с PHP " + Math.floor(Math.random() * 101) + "%");
+	}
 });
 
 vk.updates.start().catch(console.error);
