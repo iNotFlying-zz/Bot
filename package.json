@@ -1,0 +1,24 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "Простой бот ВКонтакте с различными приколами",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "iNotFlying",
+  "license": "ISC",
+  "dependencies": {
+    "@vk-io/hear": "^1.1.0",
+    "vk-io": "^4.4.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iNotFlying/Bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iNotFlying/Bot/issues"
+  },
+  "homepage": "https://github.com/iNotFlying/Bot#readme"
+}
